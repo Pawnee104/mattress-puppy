@@ -172,6 +172,12 @@ input:focus {
   color: white;
   outline: none;
 }
+textarea:focus {
+  background-color: #ffffcc;
+  border-color: #ffffcc;
+  color: white;
+  outline: none;
+}
 /* .whole-form {
   background-color: lightgray;
   text-align: center;
