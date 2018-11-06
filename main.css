@@ -1,38 +1,196 @@
 /*-----this is the css reset ----- --*/
-{
+*{
   margin:0;
-  padding:0'
+  padding:0;
   box-sizing: border-box;
   border: 1px solid rgb (200,200,200);
 
 }
+/* -- universal styles reset --*/
+
+body {
+  font-family: 'Montserrat', sans-serif;}
+
 header, footer, section {
-  padding: 5%;
+      padding: 5%;
+    }
+
+/*-- - - - - - - TYPOGRAPHY - - - - - -->*/
+h1 {
+  font-size: 4rem;
+  /* font-weight: 900; */
+  /* color: white; */
+}
+h2 {
+  font-size: 2.5rem;
+  /* color: white; */
 
 }
-header {
-  text-align: center;
-  background-image: url("https://images.unsplash.com/photo-1541276548547-5714534a535f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fb4f48118c52b1f7a4bce1880bbe50d0&auto=format&fit=crop&w=800&q=60");
-  background-size: cover;
-  background-position: center;
-}
-img {
-  width: 400px;
-  margin: auto;
-  display: block;
-}
-section {
-  background-color: #f1e7fe;
-  padding: 2rem;
-  width: 50%;
-  margin: auto;
+h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 p {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+
 }
 span {
-  color: red;
-  font-weight: 700;
-  font-style: italic
+  color:#dca625;
+  font-weight: 900;
 }
+/*-- - - - - - - - MODULAR CLASSES - - - - - - -->*/
+.padding-none {
+  padding: 0;
+}
+.padding-5 {
+  padding: 5%;
+}
+
+.padding-10 {
+  padding: 10%;
+}
+
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+
+header {
+  color:white;
+  text-align: center;
+  background-image: url("images/palm-fronds.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+}
+/*-- - - - - - - -SECTION 2: Photos and text boxes - - - - - - -->*/
+.bg-pug {
+background-image: url("images/pug.jpg");
+background-size: cover;
+background-position: 50% 33%;
+min-height: 40vh;
+}
+.bg-bed {
+  background-image: url("images/bed.jpg");
+  background-size: cover;
+  background-position: 50% 58%;
+  min-height: 40vh;
+}
+.textbox {
+  padding: 3%;
+  min-height:40vh;
+}
+/*-- - - - - - - -SECTION 3: FEATURES - - - - - - -->*/
+.bg-dark {
+  background-color: #1a2b36;
+  color: white;
+
+}
+.text {
+  color: white;
+  padding: 3%;
+  min-height: 40vh;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 0%;
+}
+/*-- - - - - - - -SECTION 4: PENCILS - - - - - - -->*/
+.bg-pencils {
+  background-image: url("images/pencils.jpg");
+  background-size: cover;
+  background-position: 50% 25%;
+  min-height: 40vh;
+  text-align: center;
+}
+.bg-pencils h4 {
+  font-weight: 400;
+}
+.bg-pencils span {
+  color: white;
+}
+
+/*-- - - - - - - -SECTION 4: TESTIMONIAL - - - - - - -->*/
+.quote-box {
+  min-height: 100%;
+}
+.text-right {
+  text-align: right;
+}
+/* .col-1_xs-12 {
+  font-size: 3rem;
+  font-weight: 900;
+
+} */
+.credit {
+  text-align: right;
+  font-size:0.75rem;
+  margin-bottom: 2px;
+  margin-top: 2px;
+
+}
+/*-- - - - - - - - - - SECTION 5: CONTACT FORM - - - - - - - --*/
+input, textarea {
+  background-color: #fff;
+  color: black;
+  font-size: 1rem;
+/*   height: 25px;; */
+  width: 100%;
+  padding: 3%;
+  margin: 2% auto;
+  display: block;
+}
+::placeholder {
+  color: gray;
+  font-family: "Montserrat" , sans-serif;
+  font-size: 1rem;
+}
+textarea {
+  resize: vertical;
+}
+
+.button {
+  background-color:#dca625;
+  border: 1px;
+  border-radius:.25rem;
+  font-family: "Montserrat" , sans-serif;
+  color: white;
+}
+.button:hover {
+  background-color: #19b5fe;
+  border-color: #19b5fe;
+  color: white;
+}
+input:focus {
+  background-color: #19b5fe;
+  border-color: #19b5fe;
+  color: white;
+  outline: none;
+}
+/* .whole-form {
+  background-color: lightgray;
+  text-align: center;
+  padding:2%;
+  min-height: 200px;
+}
+input, textarea {
+  width: 200px;
+  min-height: 25px;
+  border:0px solid black;
+  padding: 6px;
+  margin-right: 2px;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+textarea {
+  display: block;
+  resize:vertical;
+  width: 100%;
+  margin: 10px;
+  padding: 12px;
+} */
+input[type="submit"]{
+  -moz-appearance: none;
