@@ -202,3 +202,17 @@ textarea {
 } */
 input[type="submit"]{
   -moz-appearance: none;
+}
+@media all and (max-width: 576px) {
+  [class*="mobile-flip"] {
+    flex-direction: column-reverse;
+  }
+@media all and (max-width: 576px) {
+  [class*="mobile-right"] {
+    text-align: right;
+  }
+
+  @media all and (max-width: 576px) {
+    [class*="mobile-left"] {
+      text-align: left;
+    }
