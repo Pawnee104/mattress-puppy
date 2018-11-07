@@ -18,6 +18,7 @@ header, footer, section {
 /*-- - - - - - - TYPOGRAPHY - - - - - -->*/
 h1 {
   font-size: 4rem;
+  line-height: 1.6;
   /* font-weight: 900; */
   /* color: white; */
 }
@@ -61,6 +62,7 @@ header {
   color:white;
   text-align: center;
   background-image: url("images/palm-fronds.jpg");
+  background-color: #445a43;
   background-size: cover;
   background-position: center;
   min-height: 90vh;
@@ -101,6 +103,7 @@ min-height: 40vh;
 /*-- - - - - - - -SECTION 4: PENCILS - - - - - - -->*/
 .bg-pencils {
   background-image: url("images/pencils.jpg");
+  background-color: #dca625;
   background-size: cover;
   background-position: 50% 25%;
   min-height: 40vh;
@@ -111,6 +114,7 @@ min-height: 40vh;
 }
 .bg-pencils span {
   color: white;
+
 }
 
 /*-- - - - - - - -SECTION 4: TESTIMONIAL - - - - - - -->*/
@@ -212,7 +216,7 @@ input[type="submit"]{
     text-align: right;
   }
   /* use [class*= xxxx] when you want media queries to be universal across site, not just a specific instance.*/
-  
+
   [class*="mobile-left"] {
     text-align: left;
   }
