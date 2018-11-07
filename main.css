@@ -216,7 +216,6 @@ input[type="submit"]{
     text-align: right;
   }
   .textbox {
-    margin: 3%;
     padding: 6%;
   }
   /* use [class*= xxxx] when you want media queries to be universal across site, not just a specific instance.*/
