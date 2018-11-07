@@ -127,7 +127,7 @@ min-height: 40vh;
 .quote-size {
   font-size: 4rem;
   font-weight: 900;
-  line-height: -0.5;
+  line-height: -0.5%;
 }
 
 .col-10_xs-12 {
