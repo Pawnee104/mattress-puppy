@@ -18,7 +18,7 @@ header, footer, section {
 /*-- - - - - - - TYPOGRAPHY - - - - - -->*/
 h1 {
   font-size: 4rem;
-  line-height: 1.6;
+  line-height: 1.1;
   /* font-weight: 900; */
   /* color: white; */
 }
@@ -81,7 +81,7 @@ min-height: 40vh;
   min-height: 40vh;
 }
 .textbox {
-  padding: 3%;
+  padding: 5%;
   min-height:40vh;
 }
 /*-- - - - - - - -SECTION 3: FEATURES - - - - - - -->*/
@@ -215,9 +215,18 @@ input[type="submit"]{
   .mobile-right {
     text-align: right;
   }
+  .textbox {
+    margin: 2%;
+    padding: 8%;
+  }
   /* use [class*= xxxx] when you want media queries to be universal across site, not just a specific instance.*/
 
   [class*="mobile-left"] {
     text-align: left;
   }
+  [class*=grid-], [class*=grid_], [class~=grid] {
+    margin: 0;
+  }
 }
+.bg-pencils {
+  background-image: none;
