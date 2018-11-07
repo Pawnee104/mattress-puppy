@@ -203,16 +203,17 @@ textarea {
 input[type="submit"]{
   -moz-appearance: none;
 }
-@media all and (max-width: 576px) {
-  [class*="mobile-flip"] {
+
+@media (max-width: 576px) {
+  .mobile-flip {
     flex-direction: column-reverse;
   }
-@media all and (max-width: 576px) {
-  [class*="mobile-right"] {
+  .mobile-right {
     text-align: right;
   }
-
-  @media all and (max-width: 576px) {
-    [class*="mobile-left"] {
-      text-align: left;
-    }
+  /* use [class*= xxxx] when you want media queries to be universal across site, not just a specific instance.*/
+  
+  [class*="mobile-left"] {
+    text-align: left;
+  }
+}
